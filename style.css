@@ -1,10 +1,12 @@
 @import "./css/globals.css";
 
-.bg { max-width: 100%;
+.bg, .attribution { max-width: 100%;
+  max-height: 100%;
   background-color: var(--dark-cyan);
 }
 
-.bg {
+.attribution { padding-bottom: 1rem;}
+.bg  {
    background-image: url(/images/bg-pattern-bottom.svg);
 
   transform: rotateX(180deg);
@@ -62,7 +64,7 @@ position: relative;
 .perfil-conteudo::before{
   content: "";
   border: 1px solid var(--deco);
-    width: 373px;
+    width: 136%;
   position: absolute;
   left: -50px;
   top: -30px;
@@ -79,4 +81,10 @@ position: relative;
 .perfil p { color: var(--dark-gray);
  margin-block: 20px;
 }
-  
+
+
+@media (min-width: 600px){
+  body{ max-width: 100%;
+    max-height: 100%;
+  }
+}
