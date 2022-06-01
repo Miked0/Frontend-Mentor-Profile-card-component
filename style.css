@@ -1,0 +1,82 @@
+@import "./css/globals.css";
+
+.bg { max-width: 100%;
+  background-color: var(--dark-cyan);
+}
+
+.bg {
+   background-image: url(/images/bg-pattern-bottom.svg);
+
+  transform: rotateX(180deg);
+
+}
+
+
+.container{display: flex;
+  justify-content: center; 
+  transform: rotateX(180deg);
+  align-items: center;
+}
+
+.front{ padding: 90px 50px 50px 50px;
+  margin-top: 100px;
+background-color: white;
+border-radius: 20px;
+margin-bottom: 4rem;
+
+display: grid;
+position: relative;
+grid-template-columns: 1fr;
+}
+
+ .foto-perfil{ display:block;
+  border-radius: 60px;
+  margin-left: 80px;
+  margin-bottom: 12px;
+  z-index: 1;
+border: 10px solid white; 
+
+
+}
+
+ .perfil-bg{position: absolute;
+  width: 100% ; 
+
+  left: 0;
+  top: 0;
+  border-radius: 20px 20px 0 0 ;
+}
+.front h2{
+ color:  var(--very-dark-blue);}
+
+.front span{ color: var(--dark-gray);
+text-decoration: none;}
+
+.perfil-conteudo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+position: relative;
+}
+
+.perfil-conteudo::before{
+  content: "";
+  border: 1px solid var(--deco);
+    width: 373px;
+  position: absolute;
+  left: -50px;
+  top: -30px;
+}
+.perfil-conteudo ul{ display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+}
+.perfil {  text-align: center;
+  margin-top: 20px; 
+  
+}
+.perfil p { color: var(--dark-gray);
+ margin-block: 20px;
+}
+  
